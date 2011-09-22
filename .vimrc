@@ -63,3 +63,14 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+" CTRL+Space for auto-complete
+inoremap <Nul> <C-n>
+" F5 to move to the next window
+nnoremap <F5> <C-W>w<CR>
+" F6 to cycle through documents (next buffer)
+nnoremap <F6> :bn<CR>
+" Ctrl+Q to close the window
+inoremap <C-q> :bd<CR>
+" text wrapping
+set formatoptions=cq textwidth=120 foldignore= wildignore+=*.py[co]
